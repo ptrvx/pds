@@ -11,8 +11,8 @@ response = requests.request("GET", url_posts, headers=headers, data=payload)
 
 data = json.loads(response.text)
 
-body = data[10].get("body")
-title = data[10].get("title")
+body = data[2].get("body")
+title = data[2].get("title")
 
 payload = json.dumps({
   "title": title,

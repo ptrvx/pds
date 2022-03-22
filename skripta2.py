@@ -14,3 +14,8 @@ conn.request("POST", "/posts", payload, headers)
 res = conn.getresponse()
 data = res.read()
 print(data)
+
+conn.request("POST", "/posts", payload, headers)
+res = conn.getresponse()
+data = res.read()
+print(data)

@@ -3,9 +3,9 @@ import json
 
 conn = http.client.HTTPSConnection("jsonplaceholder.typicode.com")
 payload = json.dumps({
-  "title": "Novi naslov",
-  "body": "Novi tekst",
-  "userId": 1
+  "title": "Najnoviji naslov",
+  "body": "Najnoviji tekst",
+  "userId": 3
 })
 headers = {
   'Content-Type': 'application/json'
